@@ -1,4 +1,6 @@
 steps:
+- name: 'ubuntu'
+  args: ['ls', '/workspace']
 - name: 'gcr.io/cloud-builders/go'
   args: ['install', '.']
   env: ['PROJECT_ROOT=hello']
