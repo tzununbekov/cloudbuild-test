@@ -9,4 +9,4 @@ steps:
   env: ['PROJECT_ROOT=hello']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '--tag=gcr.io/$PROJECT_ID/hello', '.']
-images: ['gcr.io/$PROJECT_ID/hello']
+images: ['gcr.io/\$PROJECT_ID/hello']
